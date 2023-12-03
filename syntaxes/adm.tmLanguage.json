@@ -1,0 +1,37 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "ADM",
+    "patterns": [
+        {
+            "name": "keyword.control.adm",
+            "match": "\\s*(Given|When|Then|And|But)\\s*"
+        },
+        {
+            "match": "\\s*(Model:)\\s*(.*)",
+            "captures": {
+                "1": {"name": "constant.language.adm"},
+                "2": {"name": "entity.name.class.adm"}
+            }
+        },
+        {
+            "match": "\\s*(Assumption:|Policy:)\\s*(.*)",
+            "captures": {
+                "1": {"name": "constant.language.adm"},
+                "2": {"name": "variable.name.adm"}
+            }
+        },
+        {
+            "match": "\\s*(Attack:|Defense:)\\s*(.*)",
+            "captures": {
+                "1": {"name": "keyword.control.adm"},
+                "2": {"name": "entity.name.function.adm"}
+            }
+        },
+        {
+            "begin": "\"\"\"",
+            "end": "\"\"\"",
+            "name": "string.quoted.triple.adm"
+        }
+    ],
+    "scopeName": "source.adm"
+}
