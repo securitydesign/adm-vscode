@@ -29,7 +29,7 @@
         },
         {
             "name": "entity.name.tag.adm",
-            "match": "@\\w+"
+            "match": "@[\\w+.\\-]+"
         },
         {
             "begin": "\"\"\"",
