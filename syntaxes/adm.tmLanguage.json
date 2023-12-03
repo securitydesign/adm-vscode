@@ -28,6 +28,10 @@
             }
         },
         {
+            "name": "entity.name.tag.adm",
+            "match": "@\\w+"
+        },
+        {
             "begin": "\"\"\"",
             "end": "\"\"\"",
             "name": "string.quoted.triple.adm"

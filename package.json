@@ -1,7 +1,7 @@
 {
-    "name": "gherkin-dialect",
-    "displayName": "Gherkin Dialect",
-    "description": "Syntax highlighting for a Gherkin dialect",
+    "name": "adm-vscode",
+    "displayName": "ADM extension for VS Code",
+    "description": "Syntax highlighting for ADM files",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.75.0"
