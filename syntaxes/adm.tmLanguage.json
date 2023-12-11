@@ -3,6 +3,10 @@
     "name": "ADM",
     "patterns": [
         {
+            "match": "#.*",
+            "name": "comment.line.number-sign.adm"
+        },
+        {
             "name": "keyword.control.adm",
             "match": "\\s*(Given|When|Then|And|But)\\s*"
         },
