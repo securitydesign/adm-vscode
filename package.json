@@ -10,18 +10,26 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "adm",
-            "extensions": [".adm"],
-            "aliases": ["ADM", "adm"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "adm",
-            "scopeName": "source.adm",
-            "path": "./syntaxes/adm.tmLanguage.json"
-        }]
-        
+        "languages": [
+            {
+                "id": "adm",
+                "extensions": [
+                    ".adm"
+                ],
+                "aliases": [
+                    "ADM",
+                    "adm"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "adm",
+                "scopeName": "source.adm",
+                "path": "./syntaxes/adm.tmLanguage.json"
+            }
+        ]
     },
     "main": "./extension.js",
     "scripts": {
@@ -30,5 +38,9 @@
         "watch": "tsc -watch -p ./",
         "postinstall": "node ./node_modules/vscode/bin/install",
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "dependencies": {
+        "@cucumber/gherkin": "^27.0.0",
+        "gherkin": "^9.0.0"
     }
 }
