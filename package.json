@@ -1,8 +1,9 @@
 {
     "name": "adm-vscode",
-    "displayName": "ADM extension for VS Code",
-    "description": "Syntax highlighting for ADM files",
-    "version": "0.0.1",
+    "displayName": "Attack-Defense Modeling",
+    "description": "Syntax highlighting and autocomplete for ADM files",
+    "publisher": "vinay-venkatesh",
+    "version": "0.0.2",
     "repository": {
         "type": "git",
         "url": "https://github.com/securitydesign/securitydesign.adm.vscode.git"
